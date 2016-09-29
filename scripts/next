@@ -1,5 +1,0 @@
-#!/bin/bash
-set -v
-# sudo chmod a+x next
-xbmc-send -a "PlayerControl(Next)"
-

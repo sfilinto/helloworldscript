@@ -1,5 +1,0 @@
-#!/bin/bash
-set -v
-# sudo chmod a+x play1
-curl http://192.168.0.33/relay/on
-xbmc-send -a "PlayMedia(/home/osmc/Music/Downloaded/play/)"

@@ -1,6 +1,0 @@
-#!/bin/bash
-set -v
-# sudo chmod a+x previous
-xbmc-send -a "PlayerControl(Previous)"
-
-

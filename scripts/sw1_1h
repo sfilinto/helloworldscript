@@ -1,9 +1,0 @@
-#!/bin/bash
-set -v
-# chmod a+x
-
-curl http://192.168.0.31/relay/on
-
-sleep 60m
-
-curl http://192.168.0.31/relay/off
