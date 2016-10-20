@@ -34,3 +34,14 @@ Add the below line to the crontab (crontab -e)  to have the web server auto star
 ```
 @reboot sudo /usr/local/bin/controlws/startws  
 ```
+
+
+http://www.learningembedded.com/raspberry-pi/raspberry-pi-buzzer-interfacing/
+https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
+
+sudo apt-get install gcc python-dev python-pip i2c-tools libi2c-dev python-smbus
+sudo pip install RPi.GPIO
+
+export PYTHONPATH=$PATH
+
+import RPi.GPIO as GPIO
