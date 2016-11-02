@@ -1,5 +1,5 @@
 # 2 November 2016
-# I have used wiringPi to control the GPIOs on my raspberry Pi extensivelly in the past. Unfortunatelly i dont have any use for this anymore becuase i am using a python script now.
+I have used wiringPi to control the GPIOs on my raspberry Pi extensivelly in the past. Unfortunatelly i dont have any use for this anymore becuase i am using a python script now.
 
 Documented below are the steps to install wiringPi:  
 ```
