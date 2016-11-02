@@ -21,6 +21,7 @@ sleep .4
 /usr/local/bin/gpio -g write 17 0
 ```
 
+Credit to the author for this library. Details can be found http://wiringpi.com/
 
 
 xyz
