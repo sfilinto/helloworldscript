@@ -8,7 +8,11 @@ git clone https://github.com/sfilinto/helloworldscript.git
 cd helloworldscript  
 chmod a+x install_script.sh  
 sudo ./install_script.sh  
+```
 
+
+# command to get GPIO working ( old method )
+```
 apt-get install build-essential -y  
 git clone git://git.drogon.net/wiringPi  
 cd wiringPi  
@@ -29,20 +33,3 @@ command to manually start the web server
 ```
 sudo /usr/local/bin/controlws/startws
 ```
-
-Add the below line to the crontab (crontab -e)  to have the web server auto start at boot
-```
-@reboot sudo /usr/local/bin/controlws/startws  
-```
-
-
-http://www.learningembedded.com/raspberry-pi/raspberry-pi-buzzer-interfacing/
-https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
-https://www.raspberrypi.org/forums/viewtopic.php?f=53&t=85340
-
-sudo apt-get install gcc python-dev python-pip i2c-tools libi2c-dev python-smbus
-sudo pip install RPi.GPIO
-
-export PYTHONPATH=$PATH
-
-import RPi.GPIO as GPIO
