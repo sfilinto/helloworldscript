@@ -1,5 +1,7 @@
 #!/bin/bash -vx
 # last edited 1st November 2016
+# added support for a buzzer on GPIO 18 for a audiable indication once geyser is turned off. Disabled the audio alarm via the music system.
+
 # This install script will install the control web server & copy all source files to the requisite folders after creating them.
 
 # sudo apt-get install git-core -y
@@ -14,7 +16,8 @@
 ###############################################################################################################
 
 apt-get update -y
-apt-get upgrade -y
+apt-get dist-upgrade -y
+# apt-get upgrade -y
 
 #install pip & flask ( web server )
 apt-get install python-pip -y
@@ -28,10 +31,9 @@ apt-get install smb-app-osmc -y
 # crontab from the store
 apt-get install cron-app-osmc -y
 # Python
-apt-get install gcc python-dev python-pip i2c-tools libi2c-dev python-smbus
+apt-get install gcc python-dev python-pip i2c-tools libi2c-dev python-smbus -y
 # GPIO
 pip install RPi.GPIO
-
 ###############################################################################################################
 
 mkdir /usr/local/bin/controlws
